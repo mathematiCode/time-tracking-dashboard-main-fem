@@ -5,24 +5,25 @@ const exerciseHrs = document.querySelector("#exercise .info .hours");
 const socialHrs = document.querySelector("#social .info .hours");
 const selfCareHrs = document.querySelector("#self-care .info .hours");
 
-let timeFrameState = "weekly";
+let timeFrameSelected = "weekly";
 
 const dailyButton = document.getElementById("daily-btn");
 const weeklyButton = document.getElementById("weekly-btn");
 const monthlyButton = document.getElementById("monthly-btn");
 
 
+
 dailyButton.addEventListener("click",  function() {
-    timeFrameState="daily";
+    timeFrameSelected="daily";
 });
 
 weeklyButton.addEventListener("click",  function() {
-    timeFrameState="weekly";
+    timeFrameSelected="weekly";
     console.log("Displaying Weekly");
 });
 
 monthlyButton.addEventListener("click", function() {
-    timeFrameState="monthly";
+    timeFrameSelected="monthly";
 });
 
 let timeData; 
@@ -41,6 +42,5 @@ const fetchTimeDaily = (dataCollection) => {
       };
     });
 };
-
 
 fetchTimeDaily(timeData);
