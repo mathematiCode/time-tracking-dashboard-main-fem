@@ -79,27 +79,27 @@ const fetchTimeWeekly = (dataCollection) => {
   dataCollection.forEach(data => {
     if (data.title == "Work"){
       workHrs.innerHTML = data.timeframes.weekly.current + "hrs";
-      workPrev.innerHTML = 'Yesterday  - ' + data.timeframes.weekly.previous + "hrs";
+      workPrev.innerHTML = 'Last Week  - ' + data.timeframes.weekly.previous + "hrs";
     };
     if (data.title == "Play"){
       playHrs.innerHTML = data.timeframes.weekly.current + "hrs";
-      playPrev.innerHTML = 'Yesterday  - ' + data.timeframes.weekly.previous + "hrs";
+      playPrev.innerHTML = 'Last Week - ' + data.timeframes.weekly.previous + "hrs";
     };
     if (data.title == "Study"){
       studyHrs.innerHTML = data.timeframes.weekly.current + "hrs";
-      studyPrev.innerHTML = 'Yesterday  - ' + data.timeframes.weekly.previous + "hrs";
+      studyPrev.innerHTML = 'Last Week  - ' + data.timeframes.weekly.previous + "hrs";
     };
     if (data.title == "Exercise"){
       exerciseHrs.innerHTML = data.timeframes.weekly.current + "hrs";
-      exercisePrev.innerHTML = 'Yesterday  - ' + data.timeframes.weekly.previous + "hrs";
+      exercisePrev.innerHTML = 'Last Week  - ' + data.timeframes.weekly.previous + "hrs";
     };
     if (data.title == "Social"){
       socialHrs.innerHTML = data.timeframes.weekly.current + "hrs";
-      socialPrev.innerHTML = 'Yesterday  - ' + data.timeframes.weekly.previous + "hrs";
+      socialPrev.innerHTML = 'Last Week  - ' + data.timeframes.weekly.previous + "hrs";
     };
     if (data.title == "Self Care"){
       selfCareHrs.innerHTML = data.timeframes.weekly.current + "hrs";
-      selfCarePrev.innerHTML = 'Yesterday - ' + data.timeframes.weekly.previous + "hrs";
+      selfCarePrev.innerHTML = 'Last Week - ' + data.timeframes.weekly.previous + "hrs";
     };
   });
 };
@@ -108,27 +108,27 @@ const fetchTimeMonthly = (dataCollection) => {
   dataCollection.forEach(data => {
     if (data.title == "Work"){
       workHrs.innerHTML = data.timeframes.monthly.current + "hrs";
-      workPrev.innerHTML = 'Yesterday  - ' + data.timeframes.monthly.previous + "hrs";
+      workPrev.innerHTML = 'Last Month  - ' + data.timeframes.monthly.previous + "hrs";
     };
     if (data.title == "Play"){
       playHrs.innerHTML = data.timeframes.monthly.current + "hrs";
-      playPrev.innerHTML = 'Yesterday  - ' + data.timeframes.monthly.previous + "hrs";
+      playPrev.innerHTML = 'Last Month  - ' + data.timeframes.monthly.previous + "hrs";
     };
     if (data.title == "Study"){
       studyHrs.innerHTML = data.timeframes.monthly.current + "hrs";
-      studyPrev.innerHTML = 'Yesterday  - ' + data.timeframes.monthly.previous + "hrs";
+      studyPrev.innerHTML = 'Last Month  - ' + data.timeframes.monthly.previous + "hrs";
     };
     if (data.title == "Exercise"){
       exerciseHrs.innerHTML = data.timeframes.monthly.current + "hrs";
-      exercisePrev.innerHTML = 'Yesterday  - ' + data.timeframes.monthly.previous + "hrs";
+      exercisePrev.innerHTML = 'Last Month  - ' + data.timeframes.monthly.previous + "hrs";
     };
     if (data.title == "Social"){
       socialHrs.innerHTML = data.timeframes.monthly.current + "hrs";
-      socialPrev.innerHTML = 'Yesterday  - ' + data.timeframes.monthly.previous + "hrs";
+      socialPrev.innerHTML = 'Last Month  - ' + data.timeframes.monthly.previous + "hrs";
     };
     if (data.title == "Self Care"){
       selfCareHrs.innerHTML = data.timeframes.monthly.current + "hrs";
-      selfCarePrev.innerHTML = 'Yesterday - ' + data.timeframes.monthly.previous + "hrs";
+      selfCarePrev.innerHTML = 'Last Month - ' + data.timeframes.monthly.previous + "hrs";
     };
   });
 };
